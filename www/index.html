@@ -22,6 +22,7 @@
     <span class="mdl-layout-title">Todo</span>
   </div>
   <main class="mdl-layout__content">
+  <center>
     <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
       <div class="page-content">
 		<div ng-controller="TodoListController as todoList">
@@ -29,7 +30,7 @@
       [ <a href="" ng-click="todoList.archive()">archive</a> ]
       <ul class="unstyled">
         <li ng-repeat="todo in todoList.todos">
-          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" style="width:175px;">
             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="todo.one">
             <span class="mdl-checkbox__label">{{todo.text}}</span>
           </label>          
@@ -45,6 +46,7 @@
     </div>
       </div>
     </section>
+    </center>
   </main>
 </div>  
   </body>
